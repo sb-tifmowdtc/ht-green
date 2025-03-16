@@ -1,0 +1,303 @@
+html{
+    scroll-behavior: smooth;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    text-align: left;
+    background-image: url(htgreen-img/bg800bulbs.jpg);
+    background-repeat: repeat;
+    background-size: 100dvw;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    min-height: 10dvh;
+
+}
+
+main{
+    background-color: white;
+    width: 80dvw;
+    max-width: 1000px;
+    margin: auto;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); 
+    padding: 1em;
+
+}
+
+h1{
+    color: black;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 1em;
+    text-align: center;
+}
+
+h2{
+    color: black;
+    font-size: 1.45rem;
+    
+}
+
+h3{
+    color: black;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+p{
+    color: black;
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.5;
+    display: block;
+}
+
+
+
+
+.slogan p{
+    font-size: 1.45rem;
+    line-height: 1.8;
+}
+
+ 
+
+
+header{
+    display: flex;
+    color: black;
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+.logo-container { 
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    padding-top: 0.5em;
+    line-height: 1rem;
+}
+
+.logo-container p{
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+.logo-container img{
+    width: 70px;
+    margin: 10px;
+
+}
+
+.header ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.header li a{
+    text-decoration: none;
+    margin-right: 1em;
+    color: black;
+    font-size: 1.2em;
+}
+
+
+.offerings{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: auto;
+    clear: both;
+}
+
+.offerings img{
+    float: right;
+    padding-left: 1em;
+    width: 200px;
+}
+
+
+.nav{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    max-width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: .5em;
+    border-radius: 8px;
+    border: 1px solid black;
+    position: relative;
+}
+
+.nav a:link {
+    color: black;
+    text-decoration: none;
+}
+
+
+.about-us{
+    background-color: rgb(231, 139, 27);
+    width: 70dvw;
+    padding: 1em;
+    margin: auto;
+    border-radius: 10px;
+    max-width: 900px;
+    
+}
+
+.about-us-content{
+    column-count: 2;
+    column-gap: 3rem;
+    margin: auto;
+    padding: .5em;
+    justify-content: space-between;
+    
+}
+
+.about-us h2{
+    border-bottom: 1px solid black;
+}
+
+.about-us h3{
+    border-bottom: 1px solid black;
+}
+
+.testimonial{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    clear: both;
+    padding-right: 1em;
+}
+
+.testimonial img{
+    float: left;
+    padding-right: 1em;
+   
+}
+
+.brand-slogan {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    padding-bottom: .5em;
+}
+
+.brand-slogan p{
+    text-align: center;
+}
+
+footer p{
+    font-size: 1.5rem;
+    text-align: center;
+    justify-content: center;
+
+}
+
+footer a{
+    color: black;
+    font-size: .9rem;
+    text-decoration: none;
+    padding-right: .5em;
+    padding-left: .5em;
+    justify-content: center;
+}
+footer a:nth-child(2), 
+footer a:nth-child(3), 
+footer a:nth-child(4) { 
+    border-left: 1px solid black; 
+}
+
+.footer-info article{
+    flex-grow: 1;
+    width: 20%;
+    padding-left: 2em;
+    padding-right: 2em;
+    
+}
+
+.footer-info section{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-info div{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+
+.footer-info h2{
+    font-weight: 100;
+    text-align: center;
+}
+.footer-info p{
+    text-align: center;
+    font-size: .9rem;
+    padding-top: 1em;
+    border-top: 1px solid slategrey; 
+}
+
+.footer-info h3{
+    text-align: center;
+    padding-bottom: 1em;
+    font-size: 1.2rem;
+    
+}
+
+.footer-info article:nth-child(1),
+.footer-info article:nth-child(2) {
+    border-right: 1px solid slategray; 
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .footer-info div {
+        flex-direction: column;
+    }
+
+    main {
+        width: 95dvw;
+    }
+
+    .about-us-content {
+        column-count: 1;
+    }
+
+    .testimonial {
+        flex-direction: column;
+    }
+
+    .testimonial img {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .nav {
+        max-width: 80%;
+    }
+}
+
+
+
